@@ -55,9 +55,27 @@
         }
 
         ul li {
-            padding: 5px 0;
+            padding: 10px;
             color: #7f8c8d;
             font-size: 18px;
+            text-align: center;
+        }
+
+        .skills-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .skills-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 769px) {
+            .skills-list {
+                grid-template-columns: repeat(5, 1fr);
+            }
         }
 
         h3 {
@@ -125,7 +143,7 @@
 
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
+        <ul class="skills-list">
             <li>PHP</li>
             <li>Laravel</li>
             <li>HTML</li>
@@ -136,7 +154,7 @@
             <li>JQuery</li>
             <li>PostMan</li>
             <li>GitHub/GitLab</li>
-            <li>Liverwire</li>
+            <li>Livewire</li>
             <li>Admin LTE</li>
         </ul>
     </section>
