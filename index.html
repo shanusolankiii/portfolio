@@ -12,14 +12,14 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f9f9f9;
+            background: linear-gradient(to bottom, #F0F4F8, #C9E2F0);
             color: #333;
             padding: 0;
             margin: 0;
         }
 
         header {
-            background-color: #3498db;
+            background: linear-gradient(to right, #3989e3, #2b70df);
             color: white;
             padding: 20px;
             text-align: center;
@@ -33,12 +33,41 @@
         header p {
             font-size: 18px;
             margin: 5px 0;
+            color: #34383d;
+        }
+
+        nav {
+            background-color: #2980b9;
+            padding: 10px 0;
+            text-align: center;
+            display: none;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            background-color: #1abc9c;
+            transition: background-color 0.3s;
         }
 
         section {
-            padding: 20px 20px;
+            padding: 0px 20px;
             margin: 0 auto;
             max-width: 1200px;
+        }
+
+        .project a {
+            color: #2980b9;
+        }
+
+        .project a:hover {
+            color: #0b7eca;
+            text-decoration: underline;
         }
 
         h2 {
@@ -49,16 +78,10 @@
             display: inline-block;
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
         ul li {
             padding: 10px;
             color: #7f8c8d;
             font-size: 18px;
-            /* text-align: center; */
         }
 
         .skills-list {
@@ -81,7 +104,7 @@
         h3 {
             font-size: 24px;
             color: #2980b9;
-            margin-top: 30px;
+            /* margin-top: 30px; */
             margin-bottom: 10px;
         }
 
@@ -93,6 +116,7 @@
         .project {
             background-color: white;
             border: 1px solid #ecf0f1;
+            border-radius: 14px;
             padding: 20px;
             margin-bottom: 20px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -104,14 +128,14 @@
         }
 
         footer {
+            background-color: #2C3E50;
+            color: white;
+            padding: 20px 0;
             text-align: center;
-            padding: 30px;
-            background-color: #ecf0f1;
-            color: #7f8c8d;
         }
 
         footer a {
-            color: #2980b9;
+            color: #FFEB3B;
             text-decoration: none;
         }
 
@@ -123,6 +147,70 @@
             text-decoration: none;
             color: #2c3e50;
         }
+
+        .navbar {
+            display: none;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px 15px;
+            position: relative;
+        }
+
+        .navbar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-toggle {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .navbar-collapse {
+            display: none;
+        }
+
+        .navbar-collapse.active {
+            display: block;
+        }
+
+        .navbar-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar-nav li {
+            padding: 10px 0;
+        }
+
+        .navbar-nav a {
+            text-decoration: none;
+            color: #2C3E50;
+            font-size: 18px;
+        }
+
+        @media (min-width: 768px) {
+            nav {
+                display: block;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-collapse {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: rgba(255, 255, 255, 0.9);
+            }
+
+            .navbar {
+                display: block;
+            }
+        }
     </style>
 </head>
 
@@ -133,31 +221,65 @@
 
     </header>
 
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#hire-me">Why Hire Me?</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <nav class="navbar">
+        <div class="navbar-header">
+            <button class="navbar-toggle" onclick="toggleMenu()">
+                &#9776;
+            </button>
+        </div>
+        <div class="navbar-collapse" id="mobileMenu">
+            <ul class="navbar-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
     <section id="about">
         <h2>About Me</h2>
-        <p>I am an experienced web developer with over two years of hands-on experience, I have honed my skills in
-            creating efficient and visually appealing websites. I possess a solid understanding of back-end
-            development and am proficient in HTML, CSS, Bootstrap, PHP, and frameworks such as Laravel, as well as
-            CMS platforms like Shopify(liquid code).</p>
+        <p>
+            As a highly motivated web developer with approximately three years of hands-on experience, I specialize in
+            creating
+            dynamic, user-centric websites and web applications. My expertise lies in back-end development with a focus
+            on performance, scalability, and reliability. I’m passionate about writing clean, efficient code and
+            constantly improving my skill set to keep up with emerging technologies. Whether it's developing a robust
+            API or customizing a Shopify theme, I bring a proactive and detail-oriented approach to everything I do.
+        </p>
+        <p>
+            I excel at bridging the gap between the technical and business needs of a project. My core strengths are in
+            PHP, Laravel, Shopify (Liquid), HTML/CSS, and JavaScript, but I am also highly adaptable and always willing
+            to dive into new technologies as required. I take pride in delivering projects that not only meet client
+            specifications but also exceed expectations in terms of functionality, design, and user experience.
+        </p>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
-        <ul class="skills-list">
-            <li>HTML/CSS</li>
-            <li>Laravel</li>
-            <li>PHP</li>
-            <li>JavaScript</li>
-            <li>Bootstrap</li>
-            <li>Shopify</li>
-            <li>JQuery</li>
-            <li>Postman API</li>
-            <li>API Dog</li>
-            <li>Trello</li>
-            <li>MySQL</li>
-            <li>GitHub/GitLab</li>
-            <li>Livewire</li>
-            <li>Admin LTE</li>
+        <p>
+            I bring a comprehensive skill set to every project, ensuring seamless execution and smooth delivery across
+            all aspects of web development:
+        </p>
+        <ul>
+            <li><b>Back-End Technologies: </b>PHP, Laravel</li>
+            <li><b>Front-End Development: </b>HTML, CSS, Bootstrap, JavaScript, jQuery</li>
+            <li><b>Databases: </b>MySQL</li>
+            <li><b>API Development: </b>RESTful API creation and integration, Postman, API Dog</li>
+            <li><b>CMS Customization: </b>Shopify (Liquid)</li>
+            <li><b>Project Management Tools: </b>Trello, Slack, Jira</li>
+            <li><b>Other Tools: </b>AdminLTE, Livewire</li>
+            <li><b>Version Control: </b>GitHub, GitLab</li>
+
         </ul>
     </section>
 
@@ -165,105 +287,188 @@
         <h2>Projects</h2>
 
         <div class="project">
-            <h3>Masafi Water </h3>
-            <p><strong>Project Type:</strong> E-commerce website for water delivery</p>
+            <h3><a href="https://merchandiser.masafi.com/" target="_blank">Masafi Water</a></h3>
+            <p>E-commerce Website for Water Delivery</p>
             <ul>
-                <li>Implemented APIs to enhance functionalities and ensure seamless integration.</li>
-                <li>Worked on backend development using Laravel, including a customized Admin Panel.</li>
-                <li>Debugged and resolved technical issues to ensure smooth operation.</li>
+                <li>Designed and implemented backend functionalities using Laravel, ensuring smooth integration with
+                    third-party APIs. </li>
+                <li>Custom-built an Admin Panel to streamline the management of orders and customer data.</li>
+                <li> Provided ongoing support to resolve any operational issues, ensuring 99% uptime and enhanced system
+                    performance.</li>
             </ul>
         </div>
 
         <div class="project">
-            <h3>Admiral </h3>
-            <p><strong>Project Type:</strong> Grocery delivery e-commerce platform</p>
+            <h3>
+                <a href="https://vansales.admirals.ae/" target="_blank">Admiral</a>
+            </h3>
+            <p>Grocery Delivery Platform</p>
             <ul>
-                <li>Developed and maintained Laravel APIs for dynamic data handling.</li>
-                <li>Collaborated with frontend developers using Angular to integrate the admin panel and enhance
-                    functionality.</li>
-            </ul>
-        </div>
-        <div class="project">
-            <h3>Barakat </h3>
-            <p><strong>Project Type:</strong> It's an grocery delivery e-commerce platform</p>
-            <ul>
-                <li>Fixed issues as client listed on the portal.</li>
-                <li>Setup Database for a new organisation in the portal</li>
-                <li>Collaborated with frontend developers and worked on backend development using Laravel</li>
+                <li>Developed and maintained dynamic APIs using Laravel, ensuring real-time data handling.</li>
+                <li>Worked closely with Angular frontend developers, ensuring smooth integration of the admin
+                    panel.</li>
+                <li>Optimized the backend for improved data security and system scalability.</li>
             </ul>
         </div>
 
         <div class="project">
-            <h3>HealthBuddha </h3>
-            <p><strong>Project Type:</strong> Healthcare website for naturopathic doctors</p>
+            <h3>
+                <a href="http://engear-msfa.com/" target="_blank">Barakat</a>
+            </h3>
+            <p>Grocery Delivery E-commerce Platform</p>
             <ul>
-                <li>Designed and implemented a robust back-end infrastructure using Laravel.</li>
-                <li>Integrated RESTful APIs to ensure efficient communication between frontend and backend.</li>
-                <li>Utilized AdminLTE for a user-friendly admin interface, with dynamic features built using Livewire.
+                <li>Spearheaded backend improvements in Laravel and collaborated with frontend teams.</li>
+                <li>Designed the database schema and implemented critical fixes to meet client requirements.
+                </li>
+                <li>Ensured seamless deployment and ongoing support for the client, contributing to the site’s
+                    operational success.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>
+                <a href="https://presales-prodmobiato.nfpc.net/" target="_blank">NFPC</a>
+            </h3>
+            <p>An e-commerce website that supplies groceries, other daily useful stuff and etc.</p>
+            <ul>
+                <li>Developed and maintained APIs to enhance the functionalities such as product
+                    management, order processing, and user authentication and etc.</li>
+                <li>Ensured that APIs were optimized for performance, scalability, and security, providing a
+                    seamless user experience and fetching data faster.
+                </li>
+                <li>Identified and resolved bugs and issues, ensuring a smooth and reliable user experience
+                    for patients and administrators alike.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>
+                <a href="https://portal.healthbuddha.ca/" target="_blank">HealthBuddha</a>
+            </h3>
+            <p>Healthcare Website for Naturopathic Doctors</p>
+            <ul>
+                <li>Built a robust back-end infrastructure using Laravel, integrating RESTful APIs to enable
+                    real-time updates.</li>
+                <li>Leveraged Livewire and AdminLTE to create a dynamic admin interface, ensuring ease of use
+                    for medical professionals.</li>
+                <li>Collaborated with designers and frontend developers to deliver a seamless, user-friendly
+                    platform.</li>
+                <li> Optimized database structures for seamless data management.
                 </li>
             </ul>
         </div>
 
         <div class="project">
-            <h3>Integrity Health Naturals </h3>
-            <p><strong>Project Type:</strong> E-commerce website for health supplements</p>
+            <h3>
+                <a href="https://www.eyeplastics.com/" target="_blank">Eye Plastics</a>
+            </h3>
+            <p>Eye Healthcare Platform</p>
             <ul>
-                <li>Customized Shopify themes using Liquid for improved user experience.</li>
-                <li>Implemented responsive designs to ensure mobile compatibility and dynamic features.</li>
-                <li>Integrated cart management, checkout functionalities, and applied various theme customizations.</li>
+                <li>Led the back-end development with a focus on CRUD operations and secure data handling.</li>
+                <li>Provided maintenance and technical support to ensure that the platform met high standards of
+                    security and usability.</li>
+                <li>Identified and resolved bugs and issues, ensuring a smooth and reliable user experience for
+                    patients and administrators alike</li>
+
             </ul>
         </div>
 
         <div class="project">
-            <h3>Eye Plastics </h3>
-            <p><strong>Project Type:</strong> Eye healthcare platform</p>
+            <h3>
+                <a href="https://merchandiser.masafi.com/" target="_blank">Integrity Health Naturals</a>
+            </h3>
+            <p>E-commerce Website for Health Supplements</p>
             <ul>
-                <li>Designed and implemented CRUD operations to enhance data management efficiency.</li>
-                <li>Provided support and maintenance for ongoing system functionality and security.</li>
+                <li>Customized the Shopify theme using Liquid, enhancing the user experience with a focus on mobile
+                    responsiveness.</li>
+                <li>Developed and integrated features like cart management, checkout, and promotions for a smoother
+                    shopping experience.</li>
+                <li>Worked extensively on theme optimization to ensure faster load times and better performance.</li>
             </ul>
         </div>
 
         <div class="project">
-            <h3>Nature's Source </h3>
-            <p><strong>Project Type:</strong> E-commerce platform for medicines</p>
+            <h3><a href="https://integrityhealthnaturals.com/" target="_blank">Nature's Source</a></h3>
+            <p>E-commerce Platform for Medicines</p>
             <ul>
-                <li>Customized and optimized the Shopify theme based on client specifications.</li>
-                <li>Enhanced website performance, updated product prices, and integrated promotions.</li>
+                <li>Handled Shopify theme customizations, optimizing the platform to meet the client’s needs.</li>
+                <li>Conducted thorough testing to ensure product price updates and promotions were reflected accurately
+                    across the site.</li>
+                <li>Updated product prices to reflect current market trends and promotions.
+                </li>
+                <li>The store more than 10K products, so managed the product data, SEO, metafields, and
+                    inventory</li>
             </ul>
         </div>
+        <!-- <div class="project">
+            <h3></h3>
+            <p></p>
+            <ul>
+            </ul>
+        </div> -->
+
         <div class="project">
             <h3>Additional Shopify Projects</h3>
             <ul>
-                <li><strong>Aadi Shuddh:</strong> Customized Shopify theme and managed app configurations for a
+                <li><a href="https://www.aadishuddh.in/" target="_blank"><strong>Aadi Shuddh:</strong></a>
+                    Customized Shopify theme and managed app configurations for a
                     clothing e-commerce site.</li>
-                <li><strong>TankNation:</strong> Developed theme customizations and handled admin management for a
-                    Shopify store.</li>
-                <li><strong>B'cuz Snacks:</strong> Focused on theme customizations, app configuration, and optimization
+                <li>
+                    <a href="https://tankskincare.com/" target="_blank"><strong>TankNation:</strong></a>
+                    Developed theme customizations and handled admin management for
+                    a
+                    Shopify store.
+                </li>
+                <li><a href="https://bcuzsnacks.com/" target="_blank"><strong>B'cuz Snacks:</strong></a>
+                    Focused on theme customizations, app configuration, and
+                    optimization
                     for performance.</li>
-                <li><strong>Alora Life Spa:</strong> Delivered custom Shopify theme adjustments and integrated features
+                <li><a href="https://aloraonlineshop.com/es/" target="_blank"><strong>Alora Life Spa:</strong></a>
+                    Delivered custom Shopify theme adjustments and integrated
+                    features
                     based on client needs.</li>
             </ul>
         </div>
 
     </section>
 
-    <footer>
-        <p>Email Id: <a href="mailto:shanuslnki555@gmail.com">shanuslnki555@gmail.com</a></p>
-        <p>Phone Number: <a href="tel:+91 9575661924">+91 9575661924</a></p>
+    <section id="hire-me">
+        <h2> Why Hire Me?</h2>
         <p>
-            <a href="https://www.linkedin.com/in/shanu-solanki/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 50 50" width="25px" height="25px">
-                    <path
-                        d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z" />
-                </svg></a>
-            <a href="https://www.instagram.com/shanu.solankiii/" target="_blank" rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="25px" height="25px">
-                    <path
-                        d="M 21.580078 7 C 13.541078 7 7 13.544938 7 21.585938 L 7 42.417969 C 7 50.457969 13.544938 57 21.585938 57 L 42.417969 57 C 50.457969 57 57 50.455062 57 42.414062 L 57 21.580078 C 57 13.541078 50.455062 7 42.414062 7 L 21.580078 7 z M 47 15 C 48.104 15 49 15.896 49 17 C 49 18.104 48.104 19 47 19 C 45.896 19 45 18.104 45 17 C 45 15.896 45.896 15 47 15 z M 32 19 C 39.17 19 45 24.83 45 32 C 45 39.17 39.169 45 32 45 C 24.83 45 19 39.169 19 32 C 19 24.831 24.83 19 32 19 z M 32 23 C 27.029 23 23 27.029 23 32 C 23 36.971 27.029 41 32 41 C 36.971 41 41 36.971 41 32 C 41 27.029 36.971 23 32 23 z" />
-                </svg>
-            </a>
+            I believe that a successful project goes beyond delivering a working website; it’s about understanding the
+            client's business goals and creating digital experiences that help drive growth and success. With each
+            project I take on, my aim is to build scalable and maintainable solutions, ensuring that the client’s
+            platform remains
+            flexible and adaptable to future growth.</p>
+        <p>
+            I am a strong communicator and collaborator, which allows me to work effectively with diverse teams,
+            including
+            designers, frontend developers, and project managers. If you're looking for someone who can bring both
+            technicalexpertise and a solution-driven mindset to your next project, I would love the opportunity to
+            discuss how I
+            can contribute to your team's success.
         </p>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+            <a href="mailto:shanuslnki555@gmail.com" target="_blank">Email</a> |
+            <a href="tel:+91 9575661924" target="_blank">Contact</a> |
+            <a href="https://www.linkedin.com/in/shanu-solanki/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/shanusolankiii/" target="_blank">GitHub</a>
+        </p>
+    </section>
+
+    <footer>
+        <p style="color: white;">© 2024 Shanu Solanki. All Rights Reserved.</p>
     </footer>
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+    </script>
 </body>
 
 </html>
