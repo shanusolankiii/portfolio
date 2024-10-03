@@ -10,6 +10,26 @@
         content="Portfolio of Shanu Solanki, a web developer skilled in PHP, Laravel, Shopify theme development, and backend development.">
 
     <style>
+        ::-webkit-scrollbar {
+            width: 5px;
+
+        }
+
+        ::-webkit-scrollbar-track {
+            /* background: #f1f1f1; /* Color of the scrollbar track */
+            /* border-radius: 14px; /* Make it rounded */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #2977f4;
+            /* border-radius: 14px; */
+            /* border: 3px solid #f1f1f1; /* Add space around handle */
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #1873db;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(to bottom, #F0F4F8, #C9E2F0);
@@ -33,14 +53,15 @@
         header p {
             font-size: 18px;
             margin: 5px 0;
-            color: #34383d;
+            color: #383838;
+            ;
         }
 
         nav {
             background-color: #2980b9;
             padding: 10px 0;
             text-align: center;
-            display: none;
+            /* display: none; */
         }
 
         nav a {
@@ -192,6 +213,14 @@
             font-size: 18px;
         }
 
+        .educational-details ul li {
+            color: #34495e;
+        }
+
+        .contact-me a:hover {
+            text-decoration: underline;
+        }
+
         @media (min-width: 768px) {
             nav {
                 display: block;
@@ -225,11 +254,11 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#hire-me">Why Hire Me?</a>
         <a href="#contact">Contact</a>
+        <a href="#hire-me">Why Hire Me?</a>
     </nav>
 
-    <nav class="navbar">
+    <nav class="navbar" style="display: none;">
         <div class="navbar-header">
             <button class="navbar-toggle" onclick="toggleMenu()">
                 &#9776;
@@ -432,6 +461,17 @@
 
     </section>
 
+    <section id="education">
+        <div class="educational-details">
+            <h2>Educational Details</h2>
+            <ul>
+                <li><strong>Integrated MCA</strong> - IPS Academy, Indore - RGPV University, Bhopal</li>
+                <li><strong>XII Standard</strong> - St. John Higher Secondary School, Indore - MP Board, Bhopal</li>
+                <li><strong>X Standard</strong> - St. John Higher Secondary School, Indore - MP Board, Bhopal</li>
+            </ul>
+        </div>
+    </section>
+
     <section id="hire-me">
         <h2> Why Hire Me?</h2>
         <p>
@@ -449,14 +489,17 @@
             can contribute to your team's success.
         </p>
     </section>
+
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>
-            <a href="mailto:shanuslnki555@gmail.com" target="_blank">Email</a> |
-            <a href="tel:+91 9575661924" target="_blank">Contact</a> |
-            <a href="https://www.linkedin.com/in/shanu-solanki/" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/shanusolankiii/" target="_blank">GitHub</a>
-        </p>
+        <div class="contact-me">
+            <h2>Contact Me</h2>
+            <p>
+                <a href="mailto:shanuslnki555@gmail.com" target="_blank">Email</a> |
+                <a href="tel:+91 9575661924" target="_blank">Contact</a> |
+                <a href="https://www.linkedin.com/in/shanu-solanki/" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/shanusolankiii/" target="_blank">GitHub</a>
+            </p>
+        </div>
     </section>
 
     <footer>
