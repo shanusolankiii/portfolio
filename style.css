@@ -873,13 +873,13 @@ html[data-theme="light"] .floating-code {
 
 .floating-code--two {
     right: -2%;
-    top: 34%;
+    top: 24%;
     animation-delay: -1.5s;
 }
 
 .floating-code--three {
     left: 8%;
-    bottom: 11%;
+    bottom: 45%;
     animation-delay: -3s;
 }
 
@@ -2018,8 +2018,9 @@ html[data-theme="light"] .form-row select {
 /* Better global rhythm */
 .section {
     padding: var(--section-space) 0;
-    content-visibility: auto;
-    contain-intrinsic-size: 900px;
+    /* content-visibility: auto;
+    contain-intrinsic-size: 900px; */
+
 }
 
 /* Hero can stay cinematic, but not oversized after fold */
@@ -2268,7 +2269,7 @@ html[data-theme="light"] .service-card {
 @media (max-width: 860px) {
     .section {
         padding: clamp(64px, 9vw, 84px) 0;
-        contain-intrinsic-size: 760px;
+        /* contain-intrinsic-size: 760px; */
     }
 
     .statistics,
@@ -2881,5 +2882,194 @@ html[data-theme="light"] .case-details {
 
     .case-detail-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================================
+   FINAL SECTION SPACING FIX
+   Removes fake browser-reserved gaps and tightens rhythm
+========================================================= */
+
+.d-none {
+    display: none !important;
+}
+
+/* Critical fix: no fake reserved section height */
+.section {
+    content-visibility: visible !important;
+    contain-intrinsic-size: none !important;
+    contain: none !important;
+    scroll-margin-top: 104px;
+}
+
+/* Clean premium spacing rhythm */
+.section:not(.hero) {
+    padding-top: clamp(54px, 5.4vw, 76px) !important;
+    padding-bottom: clamp(54px, 5.4vw, 76px) !important;
+}
+
+/* Hero still needs its own cinematic spacing */
+.hero {
+    min-height: auto !important;
+    padding-top: clamp(128px, 11vw, 152px) !important;
+    padding-bottom: clamp(68px, 6vw, 88px) !important;
+}
+
+/* About to Experience should not feel disconnected */
+.about {
+    padding-bottom: clamp(38px, 4vw, 54px) !important;
+}
+
+.experience {
+    padding-top: clamp(46px, 4.6vw, 64px) !important;
+    padding-bottom: clamp(36px, 3.8vw, 52px) !important;
+}
+
+/* Experience to Skills should be tight */
+.experience+.skills,
+.skills {
+    padding-top: clamp(34px, 3.8vw, 52px) !important;
+}
+
+/* Skills to Projects should also feel connected */
+.skills {
+    padding-bottom: clamp(42px, 4.5vw, 60px) !important;
+}
+
+.skills+.projects,
+.projects {
+    padding-top: clamp(42px, 4.5vw, 62px) !important;
+}
+
+/* Remove extra visual emptiness from timeline */
+.timeline {
+    gap: 22px !important;
+}
+
+.timeline-item {
+    align-items: flex-start;
+}
+
+.timeline-content {
+    padding: clamp(22px, 2.4vw, 28px) !important;
+}
+
+/* Tighten about signature spacing */
+.about-signature {
+    margin-top: 18px !important;
+    margin-bottom: 0 !important;
+}
+
+/* Skills block should start immediately, not after large empty canvas */
+.skill-showcase {
+    margin-top: 0 !important;
+}
+
+/* Make capability cards less tall so section feels premium, not stretched */
+.capability-card {
+    min-height: 230px !important;
+}
+
+.skill-hero-card {
+    min-height: auto !important;
+}
+
+/* Reduce large internal decorative spacing */
+.skill-hero-card__orb {
+    margin-bottom: 30px !important;
+}
+
+.skill-flow {
+    margin-top: 30px !important;
+}
+
+/* Projects section tighter */
+.project-note {
+    margin-bottom: 18px !important;
+}
+
+.project-case-grid {
+    gap: 18px !important;
+}
+
+/* Statistics / tech stack should stay compact */
+.statistics,
+.tech-stack {
+    padding-top: clamp(32px, 3.6vw, 48px) !important;
+    padding-bottom: clamp(32px, 3.6vw, 48px) !important;
+}
+
+/* Remove negative margin tricks from earlier patch */
+.statistics+.tech-stack,
+.achievements+.statistics {
+    margin-top: 0 !important;
+}
+
+/* Better desktop rhythm */
+@media (min-width: 1101px) {
+
+    .about,
+    .experience,
+    .skills,
+    .projects,
+    .services,
+    .achievements,
+    .testimonials,
+    .faq,
+    .contact {
+        padding-top: clamp(56px, 5vw, 78px) !important;
+        padding-bottom: clamp(56px, 5vw, 78px) !important;
+    }
+
+    .experience {
+        padding-bottom: clamp(34px, 3vw, 48px) !important;
+    }
+
+    .experience+.skills,
+    .skills {
+        padding-top: clamp(32px, 3vw, 48px) !important;
+    }
+}
+
+/* Tablet */
+@media (max-width: 860px) {
+    .section:not(.hero) {
+        padding-top: 54px !important;
+        padding-bottom: 54px !important;
+    }
+
+    .experience {
+        padding-bottom: 34px !important;
+    }
+
+    .experience+.skills,
+    .skills {
+        padding-top: 34px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+    .section:not(.hero) {
+        padding-top: 44px !important;
+        padding-bottom: 44px !important;
+    }
+
+    .hero {
+        padding-top: 112px !important;
+        padding-bottom: 58px !important;
+    }
+
+    .experience {
+        padding-bottom: 28px !important;
+    }
+
+    .experience+.skills,
+    .skills {
+        padding-top: 28px !important;
+    }
+
+    .capability-card {
+        min-height: auto !important;
     }
 }
