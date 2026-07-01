@@ -1,517 +1,1261 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shanu Solanki | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <meta name="description"
-        content="Portfolio of Shanu Solanki, a web developer skilled in PHP, Laravel, Shopify theme development, and backend development.">
+        <title>Shanu Solanki | Senior Software Engineer</title>
+        <meta name="description"
+            content="Premium developer portfolio of Shanu Solanki, Senior Software Engineer from Indore, India, specializing in Laravel, PHP, .NET, Azure Data Factory, REST APIs, Shopify, WordPress, SQL Server and enterprise software." />
+        <meta name="keywords"
+            content="Shanu Solanki, Senior Software Engineer, Laravel Developer, PHP Developer, .NET Developer, Azure Data Factory, REST API Developer, Shopify Developer, WordPress Developer, Indore Developer" />
+        <meta name="author" content="Shanu Solanki" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="/" />
 
-    <style>
-        ::-webkit-scrollbar {
-            width: 5px;
+        <meta property="og:title"
+            content="Shanu Solanki | Senior Software Engineer" />
+        <meta property="og:description"
+            content="Enterprise software, cloud integrations, backend systems, ecommerce platforms and REST APIs built with precision." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="/" />
+        <meta property="og:image" content="assets/og-image.jpg" />
 
-        }
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title"
+            content="Shanu Solanki | Senior Software Engineer" />
+        <meta name="twitter:description"
+            content="Senior Software Engineer specializing in Laravel, .NET, Azure, REST APIs and ecommerce engineering." />
+        <meta name="twitter:image" content="assets/og-image.jpg" />
 
-        ::-webkit-scrollbar-track {
-            /* background: #f1f1f1; /* Color of the scrollbar track */
-            /* border-radius: 14px; /* Make it rounded */
-        }
+        <meta name="theme-color" content="#050816" />
 
-        ::-webkit-scrollbar-thumb {
-            background-color: #2977f4;
-            /* border-radius: 14px; */
-            /* border: 3px solid #f1f1f1; /* Add space around handle */
-        }
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+            rel="stylesheet" />
 
-        ::-webkit-scrollbar-thumb:hover {
-            background-color: #1873db;
-        }
+        <link rel="stylesheet" href="style.css" />
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to bottom, #F0F4F8, #C9E2F0);
-            color: #333;
-            padding: 0;
-            margin: 0;
-        }
-
-        header {
-            background: linear-gradient(to right, #3989e3, #2b70df);
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 48px;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 18px;
-            margin: 5px 0;
-            color: #383838;
-            ;
-        }
-
-        nav {
-            background-color: #2980b9;
-            padding: 10px 0;
-            text-align: center;
-            /* display: none; */
-        }
-
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        nav a:hover {
-            background-color: #1abc9c;
-            transition: background-color 0.3s;
-        }
-
-        section {
-            padding: 0px 20px;
-            margin: 0 auto;
-            max-width: 1200px;
-        }
-
-        .project a {
-            color: #2980b9;
-        }
-
-        .project a:hover {
-            color: #0b7eca;
-            text-decoration: underline;
-        }
-
-        h2 {
-            font-size: 32px;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #3498db;
-            display: inline-block;
-        }
-
-        ul li {
-            padding: 10px;
-            color: #7f8c8d;
-            font-size: 18px;
-        }
-
-        .skills-list {
-            display: grid;
-            gap: 10px;
-        }
-
-        @media (max-width: 768px) {
-            .skills-list {
-                grid-template-columns: repeat(2, 1fr);
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Shanu Solanki",
+                "jobTitle": "Senior Software Engineer",
+                "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Indore",
+                "addressRegion": "Madhya Pradesh",
+                "addressCountry": "IN"
+                },
+                "knowsAbout": [
+                "PHP",
+                "Laravel",
+                ".NET",
+                "Azure Data Factory",
+                "Azure",
+                "MySQL",
+                "SQL Server",
+                "REST APIs",
+                "JavaScript",
+                "Shopify",
+                "Liquid",
+                "WordPress"
+                ],
+                "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "IPS Academy"
+                }
             }
-        }
+  </script>
+    </head>
 
-        @media (min-width: 769px) {
-            .skills-list {
-                grid-template-columns: repeat(5, 1fr);
-            }
-        }
-
-        h3 {
-            font-size: 24px;
-            color: #2980b9;
-            /* margin-top: 30px; */
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 18px;
-            color: #34495e;
-        }
-
-        .project {
-            background-color: white;
-            border: 1px solid #ecf0f1;
-            border-radius: 14px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease;
-        }
-
-        .project:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        footer {
-            background-color: #2C3E50;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        footer a {
-            color: #FFEB3B;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        a {
-            text-decoration: none;
-            color: #2c3e50;
-        }
-
-        .navbar {
-            display: none;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 10px 15px;
-            position: relative;
-        }
-
-        .navbar-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .navbar-toggle {
-            background: none;
-            border: none;
-            font-size: 24px;
-            cursor: pointer;
-        }
-
-        .navbar-collapse {
-            display: none;
-        }
-
-        .navbar-collapse.active {
-            display: block;
-        }
-
-        .navbar-nav {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .navbar-nav li {
-            padding: 10px 0;
-        }
-
-        .navbar-nav a {
-            text-decoration: none;
-            color: #2C3E50;
-            font-size: 18px;
-        }
-
-        .educational-details ul li {
-            color: #34495e;
-        }
-
-        .contact-me a:hover {
-            text-decoration: underline;
-        }
-
-        @media (min-width: 768px) {
-            nav {
-                display: block;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .navbar-collapse {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background-color: rgba(255, 255, 255, 0.9);
-            }
-
-            .navbar {
-                display: block;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <h1>Shanu Solanki</h1>
-        <p>Web Developer | PHP Laravel | Shopify Theme Developer | Backend Developer</p>
-
-    </header>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="#hire-me">Why Hire Me?</a>
-    </nav>
-
-    <nav class="navbar" style="display: none;">
-        <div class="navbar-header">
-            <button class="navbar-toggle" onclick="toggleMenu()">
-                &#9776;
-            </button>
-        </div>
-        <div class="navbar-collapse" id="mobileMenu">
-            <ul class="navbar-nav">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            As a highly motivated web developer with approximately three years of hands-on experience, I specialize in
-            creating
-            dynamic, user-centric websites and web applications. My expertise lies in back-end development with a focus
-            on performance, scalability, and reliability. I’m passionate about writing clean, efficient code and
-            constantly improving my skill set to keep up with emerging technologies. Whether it's developing a robust
-            API or customizing a Shopify theme, I bring a proactive and detail-oriented approach to everything I do.
-        </p>
-        <p>
-            I excel at bridging the gap between the technical and business needs of a project. My core strengths are in
-            PHP, Laravel, Shopify (Liquid), HTML/CSS, and JavaScript, but I am also highly adaptable and always willing
-            to dive into new technologies as required. I take pride in delivering projects that not only meet client
-            specifications but also exceed expectations in terms of functionality, design, and user experience.
-        </p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>
-            I bring a comprehensive skill set to every project, ensuring seamless execution and smooth delivery across
-            all aspects of web development:
-        </p>
-        <ul>
-            <li><b>Back-End Technologies: </b>PHP, Laravel</li>
-            <li><b>Front-End Development: </b>HTML, CSS, Bootstrap, JavaScript, jQuery</li>
-            <li><b>Databases: </b>MySQL</li>
-            <li><b>API Development: </b>RESTful API creation and integration, Postman, API Dog</li>
-            <li><b>CMS Customization: </b>Shopify (Liquid)</li>
-            <li><b>Project Management Tools: </b>Trello, Slack, Jira</li>
-            <li><b>Other Tools: </b>AdminLTE, Livewire</li>
-            <li><b>Version Control: </b>GitHub, GitLab</li>
-
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3><a href="https://merchandiser.masafi.com/" target="_blank">Masafi Water</a></h3>
-            <p>E-commerce Website for Water Delivery</p>
-            <ul>
-                <li>Designed and implemented backend functionalities using Laravel, ensuring smooth integration with
-                    third-party APIs. </li>
-                <li>Custom-built an Admin Panel to streamline the management of orders and customer data.</li>
-                <li> Provided ongoing support to resolve any operational issues, ensuring 99% uptime and enhanced system
-                    performance.</li>
-            </ul>
+    <body>
+        <div class="loader" id="loader" aria-hidden="true">
+            <div class="loader__orb"></div>
+            <div class="loader__content">
+                <span>Initializing Portfolio</span>
+                <strong>Shanu Solanki</strong>
+            </div>
         </div>
 
-        <div class="project">
-            <h3>
-                <a href="https://vansales.admirals.ae/" target="_blank">Admiral</a>
-            </h3>
-            <p>Grocery Delivery Platform</p>
-            <ul>
-                <li>Developed and maintained dynamic APIs using Laravel, ensuring real-time data handling.</li>
-                <li>Worked closely with Angular frontend developers, ensuring smooth integration of the admin
-                    panel.</li>
-                <li>Optimized the backend for improved data security and system scalability.</li>
-            </ul>
+        <div class="scroll-progress" id="scrollProgress"></div>
+        <canvas class="particle-canvas" id="particleCanvas"
+            aria-hidden="true"></canvas>
+
+        <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+        <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+        <div class="site-bg" aria-hidden="true">
+            <span class="mesh mesh--one"></span>
+            <span class="mesh mesh--two"></span>
+            <span class="mesh mesh--three"></span>
+            <span class="grid-overlay"></span>
         </div>
 
-        <div class="project">
-            <h3>
-                <a href="http://engear-msfa.com/" target="_blank">Barakat</a>
-            </h3>
-            <p>Grocery Delivery E-commerce Platform</p>
-            <ul>
-                <li>Spearheaded backend improvements in Laravel and collaborated with frontend teams.</li>
-                <li>Designed the database schema and implemented critical fixes to meet client requirements.
-                </li>
-                <li>Ensured seamless deployment and ongoing support for the client, contributing to the site’s
-                    operational success.</li>
-            </ul>
-        </div>
+        <header class="site-header" id="siteHeader">
+            <nav class="navbar" aria-label="Primary navigation">
+                <a href="#home" class="brand magnetic"
+                    aria-label="Shanu Solanki home">
+                    <span class="brand__mark">SS</span>
+                    <span class="brand__text">
+                        <strong>Shanu</strong>
+                        <small>Software Engineer</small>
+                    </span>
+                </a>
 
-        <div class="project">
-            <h3>
-                <a href="https://presales-prodmobiato.nfpc.net/" target="_blank">NFPC</a>
-            </h3>
-            <p>An e-commerce website that supplies groceries, other daily useful stuff and etc.</p>
-            <ul>
-                <li>Developed and maintained APIs to enhance the functionalities such as product
-                    management, order processing, and user authentication and etc.</li>
-                <li>Ensured that APIs were optimized for performance, scalability, and security, providing a
-                    seamless user experience and fetching data faster.
-                </li>
-                <li>Identified and resolved bugs and issues, ensuring a smooth and reliable user experience
-                    for patients and administrators alike.</li>
-            </ul>
-        </div>
+                <button class="nav-toggle" id="navToggle" type="button"
+                    aria-label="Open navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                </button>
 
-        <div class="project">
-            <h3>
-                <a href="https://portal.healthbuddha.ca/" target="_blank">HealthBuddha</a>
-            </h3>
-            <p>Healthcare Website for Naturopathic Doctors</p>
-            <ul>
-                <li>Built a robust back-end infrastructure using Laravel, integrating RESTful APIs to enable
-                    real-time updates.</li>
-                <li>Leveraged Livewire and AdminLTE to create a dynamic admin interface, ensuring ease of use
-                    for medical professionals.</li>
-                <li>Collaborated with designers and frontend developers to deliver a seamless, user-friendly
-                    platform.</li>
-                <li> Optimized database structures for seamless data management.
-                </li>
-            </ul>
-        </div>
+                <div class="nav-panel" id="navPanel">
+                    <ul class="nav-links">
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#experience"
+                                class="nav-link">Experience</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#projects"
+                                class="nav-link">Projects</a></li>
+                        <li><a href="#services"
+                                class="nav-link">Services</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
 
-        <div class="project">
-            <h3>
-                <a href="https://www.eyeplastics.com/" target="_blank">Eye Plastics</a>
-            </h3>
-            <p>Eye Healthcare Platform</p>
-            <ul>
-                <li>Led the back-end development with a focus on CRUD operations and secure data handling.</li>
-                <li>Provided maintenance and technical support to ensure that the platform met high standards of
-                    security and usability.</li>
-                <li>Identified and resolved bugs and issues, ensuring a smooth and reliable user experience for
-                    patients and administrators alike</li>
+                    <button class="theme-toggle magnetic" id="themeToggle"
+                        type="button" aria-label="Toggle theme">
+                        <span class="theme-toggle__sun"></span>
+                        <span class="theme-toggle__moon"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
 
-            </ul>
-        </div>
+        <main>
+            <section class="hero section" id="home" data-section>
+                <div class="hero__glow hero__glow--one"></div>
+                <div class="hero__glow hero__glow--two"></div>
 
-        <div class="project">
-            <h3>
-                <a href="https://merchandiser.masafi.com/" target="_blank">Integrity Health Naturals</a>
-            </h3>
-            <p>E-commerce Website for Health Supplements</p>
-            <ul>
-                <li>Customized the Shopify theme using Liquid, enhancing the user experience with a focus on mobile
-                    responsiveness.</li>
-                <li>Developed and integrated features like cart management, checkout, and promotions for a smoother
-                    shopping experience.</li>
-                <li>Worked extensively on theme optimization to ensure faster load times and better performance.</li>
-            </ul>
-        </div>
+                <div class="container hero__container">
+                    <div class="hero__content reveal">
+                        <div class="availability-pill">
+                            <span></span>
+                            Available for senior engineering opportunities
+                        </div>
 
-        <div class="project">
-            <h3><a href="https://integrityhealthnaturals.com/" target="_blank">Nature's Source</a></h3>
-            <p>E-commerce Platform for Medicines</p>
-            <ul>
-                <li>Handled Shopify theme customizations, optimizing the platform to meet the client’s needs.</li>
-                <li>Conducted thorough testing to ensure product price updates and promotions were reflected accurately
-                    across the site.</li>
-                <li>Updated product prices to reflect current market trends and promotions.
-                </li>
-                <li>The store more than 10K products, so managed the product data, SEO, metafields, and
-                    inventory</li>
-            </ul>
-        </div>
-        <!-- <div class="project">
-            <h3></h3>
-            <p></p>
-            <ul>
-            </ul>
-        </div> -->
+                        <p class="eyebrow">Indore, Madhya Pradesh · India</p>
 
-        <div class="project">
-            <h3>Additional Shopify Projects</h3>
-            <ul>
-                <li><a href="https://www.aadishuddh.in/" target="_blank"><strong>Aadi Shuddh:</strong></a>
-                    Customized Shopify theme and managed app configurations for a
-                    clothing e-commerce site.</li>
-                <li>
-                    <a href="https://tankskincare.com/" target="_blank"><strong>TankNation:</strong></a>
-                    Developed theme customizations and handled admin management for
-                    a
-                    Shopify store.
-                </li>
-                <li><a href="https://bcuzsnacks.com/" target="_blank"><strong>B'cuz Snacks:</strong></a>
-                    Focused on theme customizations, app configuration, and
-                    optimization
-                    for performance.</li>
-                <li><a href="https://aloraonlineshop.com/es/" target="_blank"><strong>Alora Life Spa:</strong></a>
-                    Delivered custom Shopify theme adjustments and integrated
-                    features
-                    based on client needs.</li>
-            </ul>
-        </div>
+                        <h1 class="hero__title">
+                            Building enterprise-grade software with
+                            <span class="gradient-text">precision, scale &
+                                elegance.</span>
+                        </h1>
 
-    </section>
+                        <p class="hero__lead">
+                            I’m <strong>Shanu Solanki</strong>, a Senior
+                            Software Engineer with 4+ years of experience
+                            building
+                            backend systems, REST APIs, cloud integrations,
+                            ecommerce platforms and business-critical software
+                            for
+                            international clients.
+                        </p>
 
-    <section id="education">
-        <div class="educational-details">
-            <h2>Educational Details</h2>
-            <ul>
-                <li><strong>Integrated MCA</strong> - IPS Academy, Indore - RGPV University, Bhopal</li>
-                <li><strong>XII Standard</strong> - St. John Higher Secondary School, Indore - MP Board, Bhopal</li>
-                <li><strong>X Standard</strong> - St. John Higher Secondary School, Indore - MP Board, Bhopal</li>
-            </ul>
-        </div>
-    </section>
+                        <div class="hero__actions">
+                            <a class="btn btn--primary magnetic ripple"
+                                href="#projects">View Projects</a>
+                            <a class="btn btn--glass magnetic ripple"
+                                href="assets/Shanu-Solanki-Resume.pdf"
+                                download>Download Resume</a>
+                        </div>
 
-    <section id="hire-me">
-        <h2> Why Hire Me?</h2>
-        <p>
-            I believe that a successful project goes beyond delivering a working website; it’s about understanding the
-            client's business goals and creating digital experiences that help drive growth and success. With each
-            project I take on, my aim is to build scalable and maintainable solutions, ensuring that the client’s
-            platform remains
-            flexible and adaptable to future growth.</p>
-        <p>
-            I am a strong communicator and collaborator, which allows me to work effectively with diverse teams,
-            including
-            designers, frontend developers, and project managers. If you're looking for someone who can bring both
-            technicalexpertise and a solution-driven mindset to your next project, I would love the opportunity to
-            discuss how I
-            can contribute to your team's success.
-        </p>
-    </section>
+                        <div class="hero__socials"
+                            aria-label="Professional links">
+                            <a class="social-link magnetic"
+                                href="https://www.linkedin.com/in/shanu-solanki/"
+                                target="_blank"
+                                rel="noopener">LinkedIn</a>
+                            <a class="social-link magnetic"
+                                href="#contact">Email</a>
+                        </div>
+                    </div>
 
-    <section id="contact">
-        <div class="contact-me">
-            <h2>Contact Me</h2>
-            <p>
-                <a href="mailto:shanuslnki555@gmail.com" target="_blank">Email</a> |
-                <a href="tel:+91 9575661924" target="_blank">Contact</a> |
-                <a href="https://www.linkedin.com/in/shanu-solanki/" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/shanusolankiii/" target="_blank">GitHub</a>
-            </p>
-        </div>
-    </section>
+                    <div class="hero__visual reveal" data-parallax>
+                        <div class="profile-orbit">
+                            <span class="orbit orbit--one"></span>
+                            <span class="orbit orbit--two"></span>
+                            <span class="orbit orbit--three"></span>
 
-    <footer>
-        <p style="color: white;">© 2024 Shanu Solanki. All Rights Reserved.</p>
-    </footer>
-    <script>
-        function toggleMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('active');
-        }
+                            <div class="profile-card tilt-card">
+                                <div class="profile-card__top">
+                                    <span class="status-dot"></span>
+                                    <span>Senior Software Engineer</span>
+                                </div>
 
-    </script>
-</body>
+                                <div class="profile-card__avatar">
+                                    <span>SS</span>
+                                </div>
 
+                                <h2>Shanu Solanki</h2>
+                                <p>Laravel · .NET · Azure · REST APIs</p>
+
+                                <div class="profile-card__metrics">
+                                    <div>
+                                        <strong>4+</strong>
+                                        <span>Years</span>
+                                    </div>
+                                    <div>
+                                        <strong>18+</strong>
+                                        <span>Projects</span>
+                                    </div>
+                                    <div>
+                                        <strong>3</strong>
+                                        <span>Companies</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="floating-code floating-code--one">
+                                <span>API</span>
+                                <code>200 OK</code>
+                            </div>
+
+                            <div class="floating-code floating-code--two">
+                                <span>Cloud</span>
+                                <code>ADF Pipeline</code>
+                            </div>
+
+                            <div class="floating-code floating-code--three">
+                                <span>Stack</span>
+                                <code>PHP, .NET</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__marquee" aria-hidden="true">
+                    <div class="marquee-track">
+                        <span>Laravel</span>
+                        <span>PHP</span>
+                        <span>.NET</span>
+                        <span>Azure Data Factory</span>
+                        <span>REST APIs</span>
+                        <span>SQL Server</span>
+                        <span>Shopify</span>
+                        <span>WordPress</span>
+                        <span>Enterprise Systems</span>
+                        <span>Laravel</span>
+                        <span>PHP</span>
+                        <span>.NET</span>
+                        <span>Azure Data Factory</span>
+                        <span>REST APIs</span>
+                        <span>SQL Server</span>
+                        <span>Shopify</span>
+                        <span>WordPress</span>
+                        <span>Enterprise Systems</span>
+                    </div>
+                </div>
+
+                <a class="scroll-cue" href="#about"
+                    aria-label="Scroll to about">
+                    <span></span>
+                </a>
+            </section>
+
+            <section class="section about" id="about" data-section>
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <p class="eyebrow">About</p>
+                        <h2>Engineering that feels reliable, refined and built
+                            for real business.</h2>
+                        <p>
+                            I build software that connects business needs with
+                            clean architecture, performance, maintainability and
+                            thoughtful user experience.
+                        </p>
+                    </div>
+
+                    <div class="about-grid">
+                        <article class="about-card glass-card reveal tilt-card">
+                            <span class="card-number">01</span>
+                            <h3>Enterprise Backend Systems</h3>
+                            <p>
+                                Experienced in designing scalable Laravel, PHP
+                                and .NET systems with secure APIs, clean
+                                database design,
+                                authentication flows and business automation.
+                            </p>
+                        </article>
+
+                        <article class="about-card glass-card reveal tilt-card">
+                            <span class="card-number">02</span>
+                            <h3>Cloud & Data Integrations</h3>
+                            <p>
+                                Strong practical exposure to Azure, Azure Data
+                                Factory, SQL Server, MySQL, scheduled pipelines,
+                                third-party APIs and data-driven business
+                                workflows.
+                            </p>
+                        </article>
+
+                        <article class="about-card glass-card reveal tilt-card">
+                            <span class="card-number">03</span>
+                            <h3>Ecommerce & CMS Delivery</h3>
+                            <p>
+                                Built and supported Shopify, Liquid and
+                                WordPress projects for wellness, healthcare,
+                                consumer brands and
+                                international teams.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="about-signature reveal">
+                        <div>
+                            <strong>Current Focus</strong>
+                            <span>Laravel · .NET · Azure Data Factory ·
+                                Enterprise Applications</span>
+                        </div>
+                        <div>
+                            <strong>Languages</strong>
+                            <span>English · Hindi</span>
+                        </div>
+                        <div>
+                            <strong>Education</strong>
+                            <span>Integrated MCA · IPS Academy, Indore</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section experience" id="experience" data-section>
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <p class="eyebrow">Experience</p>
+                        <h2>A timeline of product engineering, enterprise
+                            delivery and international projects.</h2>
+                    </div>
+
+                    <div class="timeline">
+                        <article class="timeline-item reveal">
+                            <div class="timeline-logo">CD</div>
+                            <div class="timeline-content glass-card">
+                                <div class="timeline-meta">
+                                    <span>October 2024 — Present</span>
+                                    <strong>CodeDazzler Pvt Ltd</strong>
+                                </div>
+                                <h3>Senior Software Engineer</h3>
+                                <p>
+                                    Working across Laravel, .NET, Azure Data
+                                    Factory, SQL Server, MySQL and enterprise
+                                    applications with
+                                    high-quality engineering standards.
+                                </p>
+                                <div class="badge-row">
+                                    <span>Laravel</span>
+                                    <span>.NET</span>
+                                    <span>ADF</span>
+                                    <span>SQL Server</span>
+                                    <span>Enterprise Apps</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item reveal">
+                            <div class="timeline-logo">MI</div>
+                            <div class="timeline-content glass-card">
+                                <div class="timeline-meta">
+                                    <span>Feb 2024 — Oct 2024</span>
+                                    <strong>Mobiato IT Solutions · Dubai
+                                        Remote</strong>
+                                </div>
+                                <h3>Software Engineer</h3>
+                                <p>
+                                    Delivered software for well-known regional
+                                    brands and ecommerce/business systems across
+                                    multiple
+                                    project environments.
+                                </p>
+                                <div class="project-mini-list">
+                                    <span>Masafi</span>
+                                    <span>Admiral</span>
+                                    <span>Barakat</span>
+                                    <span>NFPC</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item reveal">
+                            <div class="timeline-logo">PS</div>
+                            <div class="timeline-content glass-card">
+                                <div class="timeline-meta">
+                                    <span>May 2022 — Feb 2024</span>
+                                    <strong>Palmate Solutions</strong>
+                                </div>
+                                <h3>Web Developer</h3>
+                                <p>
+                                    Built and maintained healthcare, wellness,
+                                    ecommerce and service-based platforms with
+                                    practical frontend,
+                                    backend and CMS experience.
+                                </p>
+                                <div class="project-mini-list">
+                                    <span>HealthBuddha</span>
+                                    <span>EyePlastics</span>
+                                    <span>Nature’s Source</span>
+                                    <span>Integrity Health Naturals</span>
+                                    <span>TankNation</span>
+                                    <span>Sage Health</span>
+                                    <span>B’Cuz Snacks</span>
+                                    <span>Alora Life Spa</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section skills" id="skills" data-section>
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <p class="eyebrow">Skills</p>
+                        <h2>Technical capability built around real production work, not percentage bars.</h2>
+                        <p>
+                            My strength is not just knowing tools. It is understanding business logic, database structure,
+                            API contracts, integrations, debugging and shipping software that survives real users.
+                        </p>
+                    </div>
+            
+                    <div class="skill-showcase">
+                        <article class="skill-hero-card glass-card reveal tilt-card">
+                            <div class="skill-hero-card__orb">
+                                <span>SS</span>
+                            </div>
+            
+                            <div class="skill-hero-card__content">
+                                <p class="skill-kicker">Primary Engineering Profile</p>
+                                <h3>Backend-first engineer with cloud, API and ecommerce delivery experience.</h3>
+                                <p>
+                                    Comfortable working across Laravel, PHP, .NET, SQL Server, MySQL, Azure Data Factory,
+                                    REST APIs, Shopify, WordPress and modern frontend delivery.
+                                </p>
+                            </div>
+            
+                            <div class="skill-flow">
+                                <span>Understand</span>
+                                <i></i>
+                                <span>Architect</span>
+                                <i></i>
+                                <span>Build</span>
+                                <i></i>
+                                <span>Integrate</span>
+                                <i></i>
+                                <span>Optimize</span>
+                            </div>
+                        </article>
+            
+                        <div class="capability-grid">
+                            <article class="capability-card reveal tilt-card">
+                                <div class="capability-card__head">
+                                    <span>01</span>
+                                    <strong>Backend Systems</strong>
+                                </div>
+                                <p>
+                                    Business logic, APIs, dashboards, authentication, admin panels, database workflows
+                                    and maintainable server-side architecture.
+                                </p>
+                                <div class="skill-chip-row">
+                                    <span>PHP</span>
+                                    <span>Laravel</span>
+                                    <span>.NET</span>
+                                    <span>REST APIs</span>
+                                </div>
+                            </article>
+            
+                            <article class="capability-card reveal tilt-card">
+                                <div class="capability-card__head">
+                                    <span>02</span>
+                                    <strong>Cloud & Data</strong>
+                                </div>
+                                <p>
+                                    Azure-based workflows, Azure Data Factory pipelines, SQL Server structures,
+                                    MySQL data models and scheduled integrations.
+                                </p>
+                                <div class="skill-chip-row">
+                                    <span>Azure</span>
+                                    <span>ADF</span>
+                                    <span>SQL Server</span>
+                                    <span>MySQL</span>
+                                </div>
+                            </article>
+            
+                            <article class="capability-card reveal tilt-card">
+                                <div class="capability-card__head">
+                                    <span>03</span>
+                                    <strong>Ecommerce & CMS</strong>
+                                </div>
+                                <p>
+                                    Shopify storefront updates, Liquid customization, WordPress builds, content-driven pages
+                                    and business-focused website delivery.
+                                </p>
+                                <div class="skill-chip-row">
+                                    <span>Shopify</span>
+                                    <span>Liquid</span>
+                                    <span>WordPress</span>
+                                    <span>CMS</span>
+                                </div>
+                            </article>
+            
+                            <article class="capability-card reveal tilt-card">
+                                <div class="capability-card__head">
+                                    <span>04</span>
+                                    <strong>Frontend Delivery</strong>
+                                </div>
+                                <p>
+                                    Clean responsive UI implementation using semantic HTML, CSS, JavaScript,
+                                    Bootstrap and performance-minded frontend patterns.
+                                </p>
+                                <div class="skill-chip-row">
+                                    <span>JavaScript</span>
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>Bootstrap</span>
+                                </div>
+                            </article>
+            
+                            <article class="capability-card reveal tilt-card">
+                                <div class="capability-card__head">
+                                    <span>05</span>
+                                    <strong>Developer Workflow</strong>
+                                </div>
+                                <p>
+                                    Version control, API testing, debugging, code review readiness and practical delivery
+                                    inside real project environments.
+                                </p>
+                                <div class="skill-chip-row">
+                                    <span>Git</span>
+                                    <span>GitHub</span>
+                                    <span>GitLab</span>
+                                    <span>Postman</span>
+                                </div>
+                            </article>
+            
+                            <article class="capability-card capability-card--accent reveal tilt-card">
+                                <div class="capability-card__head">
+                                    <span>06</span>
+                                    <strong>Engineering Mindset</strong>
+                                </div>
+                                <p>
+                                    I focus on reliability, readable code, clean data flow, practical architecture,
+                                    performance and long-term maintainability.
+                                </p>
+                                <div class="skill-chip-row">
+                                    <span>Debugging</span>
+                                    <span>Scalability</span>
+                                    <span>Ownership</span>
+                                    <span>Quality</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section projects" id="projects" data-section>
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <p class="eyebrow">Projects</p>
+                        <h2>Selected private client work presented as engineering case studies.</h2>
+                        <p>
+                            Some projects are protected by client access, internal dashboards, private repositories or NDA-style
+                            delivery, so they are shown through role, scope, stack and contribution instead of public demo links.
+                        </p>
+                    </div>
+            
+                    <div class="project-note reveal">
+                        <!-- <span>Private Work</span> -->
+                        <p>
+                            Public links are not always available for enterprise, healthcare, ecommerce and internal business systems.
+                            The stronger way to present them is through problem, contribution, technologies and engineering value.
+                        </p>
+                    </div>
+            
+                    <div class="project-case-grid">
+                        <article class="project-case-card reveal tilt-card">
+                            <div class="project-case-card__visual">
+                                <span>HB</span>
+                                <small>Healthcare Platform</small>
+                            </div>
+            
+                            <div class="project-case-card__body">
+                                <div class="project-case-meta">
+                                    <!-- <span>Client Project</span> -->
+                                    <span>Backend + Platform</span>
+                                </div>
+            
+                                <h3>HealthBuddha</h3>
+                                <p>
+                                    Healthcare technology platform work involving backend logic, custom workflows,
+                                    user-facing modules and scalable application delivery.
+                                </p>
+            
+                                <div class="case-detail-grid">
+                                    <div>
+                                        <strong>Role</strong>
+                                        <span>Backend & Web Developer</span>
+                                    </div>
+                                    <div>
+                                        <strong>Focus</strong>
+                                        <span>Laravel, APIs, MySQL, UI flows</span>
+                                    </div>
+                                </div>
+            
+                                <details class="case-details">
+                                    <summary>View contribution</summary>
+                                    <ul>
+                                        <li>Worked on application modules and business logic.</li>
+                                        <li>Supported frontend/backend implementation for healthcare workflows.</li>
+                                        <li>Helped deliver maintainable project features in a production environment.</li>
+                                    </ul>
+                                </details>
+            
+                                <div class="badge-row">
+                                    <span>Laravel</span>
+                                    <span>PHP</span>
+                                    <span>MySQL</span>
+                                    <span>APIs</span>
+                                </div>
+                            </div>
+                        </article>
+            
+                        <article class="project-case-card reveal tilt-card">
+                            <div class="project-case-card__visual">
+                                <span>NS</span>
+                                <small>Wellness Ecommerce</small>
+                            </div>
+            
+                            <div class="project-case-card__body">
+                                <div class="project-case-meta">
+                                    <!-- <span>Client Project</span> -->
+                                    <span>Shopify</span>
+                                </div>
+            
+                                <h3>Nature’s Source</h3>
+                                <p>
+                                    Ecommerce development and maintenance for a wellness brand with product-focused workflows,
+                                    storefront updates and Shopify theme-level improvements.
+                                </p>
+            
+                                <div class="case-detail-grid">
+                                    <div>
+                                        <strong>Role</strong>
+                                        <span>Shopify / Web Developer</span>
+                                    </div>
+                                    <div>
+                                        <strong>Focus</strong>
+                                        <span>Liquid, JS, CSS, ecommerce UX</span>
+                                    </div>
+                                </div>
+            
+                                <details class="case-details">
+                                    <summary>View contribution</summary>
+                                    <ul>
+                                        <li>Worked on storefront refinements and theme customization.</li>
+                                        <li>Supported ecommerce content, product and UI workflows.</li>
+                                        <li>Improved frontend presentation using Shopify and Liquid.</li>
+                                    </ul>
+                                </details>
+            
+                                <div class="badge-row">
+                                    <span>Shopify</span>
+                                    <span>Liquid</span>
+                                    <span>JavaScript</span>
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+                        </article>
+            
+                        <article class="project-case-card reveal tilt-card">
+                            <div class="project-case-card__visual">
+                                <span>MS</span>
+                                <small>Enterprise Brand</small>
+                            </div>
+            
+                            <div class="project-case-card__body">
+                                <div class="project-case-meta">
+                                    <!-- <span>Dubai Remote</span> -->
+                                    <span>Business System</span>
+                                </div>
+            
+                                <h3>Masafi</h3>
+                                <p>
+                                    Enterprise project contribution for a well-known regional brand, focused on structured delivery,
+                                    backend workflows and reliable implementation.
+                                </p>
+            
+                                <div class="case-detail-grid">
+                                    <div>
+                                        <strong>Role</strong>
+                                        <span>Software Engineer</span>
+                                    </div>
+                                    <div>
+                                        <strong>Focus</strong>
+                                        <span>Backend, database, integrations</span>
+                                    </div>
+                                </div>
+            
+                                <details class="case-details">
+                                    <summary>View contribution</summary>
+                                    <ul>
+                                        <li>Contributed to business application development.</li>
+                                        <li>Worked with structured project requirements and delivery standards.</li>
+                                        <li>Supported backend and database-related implementation.</li>
+                                    </ul>
+                                </details>
+            
+                                <div class="badge-row">
+                                    <span>Backend</span>
+                                    <span>Database</span>
+                                    <span>APIs</span>
+                                </div>
+                            </div>
+                        </article>
+            
+                        <article class="project-case-card reveal tilt-card">
+                            <div class="project-case-card__visual">
+                                <span>NF</span>
+                                <small>Enterprise System</small>
+                            </div>
+            
+                            <div class="project-case-card__body">
+                                <div class="project-case-meta">
+                                    <!-- <span>Client Project</span> -->
+                                    <span>Backend</span>
+                                </div>
+            
+                                <h3>NFPC</h3>
+                                <p>
+                                    Business system work involving careful backend thinking, structured implementation
+                                    and reliability-focused software contribution.
+                                </p>
+            
+                                <div class="case-detail-grid">
+                                    <div>
+                                        <strong>Role</strong>
+                                        <span>Software Engineer</span>
+                                    </div>
+                                    <div>
+                                        <strong>Focus</strong>
+                                        <span>.NET, SQL, application logic</span>
+                                    </div>
+                                </div>
+            
+                                <details class="case-details">
+                                    <summary>View contribution</summary>
+                                    <ul>
+                                        <li>Worked on enterprise-style application requirements.</li>
+                                        <li>Supported backend workflows and database-connected logic.</li>
+                                        <li>Contributed to maintainable feature delivery.</li>
+                                    </ul>
+                                </details>
+            
+                                <div class="badge-row">
+                                    <span>.NET</span>
+                                    <span>SQL Server</span>
+                                    <span>APIs</span>
+                                </div>
+                            </div>
+                        </article>
+            
+                        <article class="project-case-card reveal tilt-card">
+                            <div class="project-case-card__visual">
+                                <span>IH</span>
+                                <small>Health Ecommerce</small>
+                            </div>
+            
+                            <div class="project-case-card__body">
+                                <div class="project-case-meta">
+                                    <!-- <span>Client Project</span> -->
+                                    <span>Ecommerce</span>
+                                </div>
+            
+                                <h3>Integrity Health Naturals</h3>
+                                <p>
+                                    Health-focused ecommerce project work involving CMS updates, frontend improvements,
+                                    structured content and maintainable digital commerce delivery.
+                                </p>
+            
+                                <div class="case-detail-grid">
+                                    <div>
+                                        <strong>Role</strong>
+                                        <span>Web Developer</span>
+                                    </div>
+                                    <div>
+                                        <strong>Focus</strong>
+                                        <span>Shopify, CMS, frontend</span>
+                                    </div>
+                                </div>
+            
+                                <details class="case-details">
+                                    <summary>View contribution</summary>
+                                    <ul>
+                                        <li>Supported ecommerce storefront and CMS-level delivery.</li>
+                                        <li>Worked on frontend presentation and content structure.</li>
+                                        <li>Helped maintain polished customer-facing pages.</li>
+                                    </ul>
+                                </details>
+            
+                                <div class="badge-row">
+                                    <span>Shopify</span>
+                                    <span>CMS</span>
+                                    <span>Frontend</span>
+                                </div>
+                            </div>
+                        </article>
+            
+                        <article class="project-case-card reveal tilt-card">
+                            <div class="project-case-card__visual">
+                                <span>SG</span>
+                                <small>Healthcare Website</small>
+                            </div>
+            
+                            <div class="project-case-card__body">
+                                <div class="project-case-meta">
+                                    <!-- <span>Client Project</span> -->
+                                    <span>CMS Website</span>
+                                </div>
+            
+                                <h3>Sage Health</h3>
+                                <p>
+                                    Healthcare website delivery with clean page structure, polished frontend implementation
+                                    and CMS-focused content presentation.
+                                </p>
+            
+                                <div class="case-detail-grid">
+                                    <div>
+                                        <strong>Role</strong>
+                                        <span>Web Developer</span>
+                                    </div>
+                                    <div>
+                                        <strong>Focus</strong>
+                                        <span>WordPress, PHP, CSS</span>
+                                    </div>
+                                </div>
+            
+                                <details class="case-details">
+                                    <summary>View contribution</summary>
+                                    <ul>
+                                        <li>Worked on healthcare website layout and implementation.</li>
+                                        <li>Supported structured content and frontend styling.</li>
+                                        <li>Delivered clean CMS-based web pages.</li>
+                                    </ul>
+                                </details>
+            
+                                <div class="badge-row">
+                                    <span>WordPress</span>
+                                    <span>PHP</span>
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+            
+                    <!-- <div class="project-cta reveal">
+                        <div>
+                            <span>Want deeper proof?</span>
+                            <strong>Detailed walkthroughs can be shared during interviews or private conversations.</strong>
+                        </div>
+                        <a href="#contact" class="btn btn--primary magnetic ripple">Request Project Walkthrough</a>
+                    </div> -->
+                </div>
+            </section>
+
+            <section class="section services" id="services" data-section>
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <p class="eyebrow">Services</p>
+                        <h2>Focused engineering services for teams that care
+                            about quality and speed.</h2>
+                    </div>
+
+                    <div class="services-grid">
+                        <article class="service-card reveal tilt-card">
+                            <span>01</span>
+                            <h3>Backend Development</h3>
+                            <p>Scalable backend systems, database workflows,
+                                authentication, business logic and maintainable
+                                code architecture.</p>
+                        </article>
+
+                        <article class="service-card reveal tilt-card">
+                            <span>02</span>
+                            <h3>Laravel Development</h3>
+                            <p>Custom Laravel applications, APIs, dashboards,
+                                admin systems, queues, jobs and production-ready
+                                backend modules.</p>
+                        </article>
+
+                        <article class="service-card reveal tilt-card">
+                            <span>03</span>
+                            <h3>.NET Development</h3>
+                            <p>Enterprise application development and backend
+                                services using .NET, SQL Server and structured
+                                application patterns.</p>
+                        </article>
+
+                        <article class="service-card reveal tilt-card">
+                            <span>04</span>
+                            <h3>Cloud Integration</h3>
+                            <p>Azure, Azure Data Factory, API pipelines,
+                                scheduled data movement, operational workflows
+                                and integrations.</p>
+                        </article>
+
+                        <article class="service-card reveal tilt-card">
+                            <span>05</span>
+                            <h3>REST APIs</h3>
+                            <p>Secure API design, integrations, third-party
+                                connections, API documentation, testing and
+                                performance improvements.</p>
+                        </article>
+
+                        <article class="service-card reveal tilt-card">
+                            <span>06</span>
+                            <h3>Shopify Development</h3>
+                            <p>Shopify Liquid, storefront enhancements, theme
+                                customization, ecommerce flows and frontend
+                                performance improvements.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section achievements" id="achievements"
+                data-section>
+                <div class="container">
+                    <div class="achievement-panel reveal">
+                        <div>
+                            <p class="eyebrow">Achievements</p>
+                            <h2>Practical wins built through consistency,
+                                ownership and deep technical delivery.</h2>
+                        </div>
+
+                        <div class="achievement-grid">
+                            <article>
+                                <strong>Enterprise Delivery</strong>
+                                <span>Worked on business-critical applications
+                                    using Laravel, .NET, SQL Server, MySQL and
+                                    Azure workflows.</span>
+                            </article>
+                            <article>
+                                <strong>International Exposure</strong>
+                                <span>Contributed to projects for Dubai-based
+                                    and international clients across ecommerce
+                                    and enterprise brands.</span>
+                            </article>
+                            <article>
+                                <strong>Cross-Stack Strength</strong>
+                                <span>Comfortable across backend, cloud
+                                    integration, CMS, ecommerce, frontend and
+                                    API-heavy workflows.</span>
+                            </article>
+                            <article>
+                                <strong>Continuous Growth</strong>
+                                <span>Actively expanding expertise across modern
+                                    engineering practices and European
+                                    technology ecosystems.</span>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section statistics" id="statistics" data-section>
+                <div class="container">
+                    <div class="stats-grid reveal">
+                        <div class="stat-card">
+                            <strong data-counter="4.5">0</strong>
+                            <span>Years Experience</span>
+                        </div>
+                        <div class="stat-card">
+                            <strong data-counter="18">0</strong>
+                            <span>Projects Delivered</span>
+                        </div>
+                        <div class="stat-card">
+                            <strong data-counter="20">0</strong>
+                            <span>Technologies Used</span>
+                        </div>
+                        <div class="stat-card">
+                            <strong data-counter="3">0</strong>
+                            <span>Companies</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section tech-stack" id="tech-stack" data-section>
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <p class="eyebrow">Tech Stack</p>
+                        <h2>Tools and technologies used to ship clean, scalable
+                            and reliable software.</h2>
+                    </div>
+                </div>
+
+                <div class="stack-marquee reveal" aria-label="Technology stack">
+                    <div class="stack-track">
+                        <span>PHP</span><span>Laravel</span><span>.NET</span><span>Azure</span><span>Azure
+                            Data Factory</span>
+                        <span>MySQL</span><span>SQL Server</span><span>REST
+                            APIs</span><span>JavaScript</span><span>HTML5</span>
+                        <span>CSS3</span><span>Bootstrap</span><span>Shopify</span><span>Liquid</span><span>WordPress</span>
+                        <span>Git</span><span>GitHub</span><span>GitLab</span><span>Postman</span>
+                        <span>PHP</span><span>Laravel</span><span>.NET</span><span>Azure</span><span>Azure
+                            Data Factory</span>
+                        <span>MySQL</span><span>SQL Server</span><span>REST
+                            APIs</span><span>JavaScript</span><span>HTML5</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section testimonials" id="testimonials"
+                data-section>
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <p class="eyebrow">Testimonials</p>
+                        <h2>How teams experience working with Shanu.</h2>
+                    </div>
+
+                    <div class="testimonial-grid">
+                        <article
+                            class="testimonial-card glass-card reveal tilt-card">
+                            <p>
+                                “Shanu brings a calm engineering mindset to
+                                complex requirements and translates them into
+                                clean,
+                                dependable software delivery.”
+                            </p>
+                            <div>
+                                <strong>Project Stakeholder</strong>
+                                <span>Enterprise Application</span>
+                            </div>
+                        </article>
+
+                        <article
+                            class="testimonial-card glass-card reveal tilt-card">
+                            <p>
+                                “Strong backend thinking, fast debugging and
+                                reliable ownership across API, database and
+                                integration-heavy tasks.”
+                            </p>
+                            <div>
+                                <strong>Technical Lead</strong>
+                                <span>Backend & Cloud Workflow</span>
+                            </div>
+                        </article>
+
+                        <article
+                            class="testimonial-card glass-card reveal tilt-card">
+                            <p>
+                                “Professional, detail-oriented and comfortable
+                                working across ecommerce, CMS and custom
+                                software environments.”
+                            </p>
+                            <div>
+                                <strong>Delivery Partner</strong>
+                                <span>Ecommerce Project</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section faq" id="faq" data-section>
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <p class="eyebrow">FAQ</p>
+                        <h2>Questions teams usually ask before working
+                            together.</h2>
+                    </div>
+
+                    <div class="faq-list reveal">
+                        <details>
+                            <summary>What kind of projects does Shanu specialize
+                                in?</summary>
+                            <p>Backend systems, Laravel applications, .NET
+                                development, REST APIs, Azure Data Factory
+                                workflows, ecommerce projects and CMS-based
+                                delivery.</p>
+                        </details>
+
+                        <details>
+                            <summary>Is Shanu available for remote
+                                opportunities?</summary>
+                            <p>Yes. Shanu has remote project exposure and is
+                                open to high-quality engineering opportunities
+                                with product teams, agencies and enterprise
+                                teams.</p>
+                        </details>
+
+                        <details>
+                            <summary>Which industries has Shanu worked
+                                with?</summary>
+                            <p>Healthcare, wellness, ecommerce, consumer brands,
+                                enterprise systems and service-based
+                                businesses.</p>
+                        </details>
+
+                        <details>
+                            <summary>Can Shanu work across frontend and
+                                backend?</summary>
+                            <p>Yes. The primary strength is backend engineering,
+                                but Shanu also works with JavaScript, HTML, CSS,
+                                Bootstrap, Shopify Liquid and WordPress.</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section contact" id="contact" data-section>
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-copy reveal">
+                            <p class="eyebrow">Contact</p>
+                            <h2>Let’s build software that feels premium from
+                                architecture to experience.</h2>
+
+                        </div>
+
+                        <!-- <form class="contact-form glass-card reveal d-none"
+                            id="contactForm" novalidate>
+                            <div class="form-row">
+                                <label for="name">Name</label>
+                                <input id="name" name="from_name" type="text"
+                                    placeholder="Your full name"
+                                    autocomplete="name" required />
+                                <small class="field-error"></small>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="email">Email</label>
+                                <input id="email" name="reply_to" type="email"
+                                    placeholder="you@example.com"
+                                    autocomplete="email" required />
+                                <small class="field-error"></small>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="projectType">Project Type</label>
+                                <select id="projectType" name="project_type"
+                                    required>
+                                    <option value>Select one</option>
+                                    <option>Senior Engineering Role</option>
+                                    <option>Laravel Development</option>
+                                    <option>.NET Development</option>
+                                    <option>Azure / ADF Integration</option>
+                                    <option>REST API Development</option>
+                                    <option>Shopify / WordPress</option>
+                                </select>
+                                <small class="field-error"></small>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    placeholder="Tell me what you want to build..."
+                                    required></textarea>
+                                <small class="field-error"></small>
+                            </div>
+
+                            <button class="btn btn--primary magnetic ripple"
+                                type="submit">
+                                Send Message
+                            </button>
+
+                            <p class="form-status" id="formStatus" role="status"
+                                aria-live="polite"></p>
+                        </form> -->
+                        <div class="contact-methods">
+                            <div>
+                                <p style="    margin: 22px 0 0;
+                                max-width: 690px;
+                                color: var(--muted);
+                                font-size: 1.05rem;">
+                                    Reach out for senior software engineering
+                                    roles,
+                                    backend projects, Laravel/.NET development,
+                                    Azure integrations,
+                                    ecommerce systems or long-term product
+                                    engineering collaboration.
+                                </p>
+                            </div>
+                            <a href="mailto:shanuslnki555@gmail.com"
+                                class="contact-method magnetic">
+                                <span>Email</span>
+                                <strong>workwith.shanusolanki@gmail.com</strong>
+                            </a>
+                            <a href="https://www.linkedin.com/in/shanu-solanki/"
+                                target="_blank" rel="noopener"
+                                class="contact-method magnetic">
+                                <span>LinkedIn</span>
+                                <strong>Connect professionally</strong>
+                            </a>
+                            <a href="https://www.instagram.com/shanu.solankiii/"
+                                target="_blank"
+                                rel="noopener"
+                                class="contact-method magnetic">
+                                <span>Instagram</span>
+                                <strong>Explore on social</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <div>
+                    <a href="#home" class="footer-brand">Shanu Solanki</a>
+                    <p>Senior Software Engineer crafting enterprise-grade
+                        software, APIs, cloud integrations and ecommerce
+                        systems.</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <div class="footer-meta">
+                    <span>Indore, Madhya Pradesh</span>
+                    <span>English · Hindi</span>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© <span id="currentYear"></span> Shanu Solanki. All rights
+                    reserved.</span>
+                <a href="#home" class="back-inline">Back to top</a>
+            </div>
+        </footer>
+
+        <button class="back-to-top magnetic" id="backToTop" type="button"
+            aria-label="Back to top">
+            ↑
+        </button>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script src="script.js"></script>
+    </body>
 </html>
